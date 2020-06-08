@@ -1,0 +1,41 @@
+{
+    "name"             : "estasi/laminas-helpers",
+    "description"      : "Integration of Estasi components into Laminas",
+    "keywords"         : [
+        "estasi",
+        "psr",
+        "psr-4",
+        "psr-12",
+        "helpers",
+        "laminas",
+        "validator",
+        "filter",
+        "translator"
+    ],
+    "minimum-stability": "stable",
+    "license"          : "BSD-3-Clause",
+    "authors"          : [
+        {
+            "name" : "Mikhail Erypalov",
+            "email": "mikaxxl@yandex.ru",
+            "role" : "developer"
+        }
+    ],
+    "config"           : {
+        "sort-packages"      : true,
+        "optimize-autoloader": true
+    },
+    "require"          : {
+        "php"                           : "^7.4",
+        "estasi/filter"                 : "^1",
+        "estasi/validator"              : "^1.2",
+        "estasi/plugin-manager"         : "^1.1",
+        "estasi/utility"                : "^1.2",
+        "laminas/laminas-servicemanager": "^3.4"
+    },
+    "autoload"         : {
+        "psr-4": {
+            "Estasi\\LaminasHelpers\\": "src/"
+        }
+    }
+}
