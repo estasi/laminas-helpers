@@ -13,9 +13,6 @@ use Estasi\LaminasHelpers\Interfaces\ConfigProvider as ConfigProviderInterface;
  */
 final class ConfigProvider implements ConfigProviderInterface
 {
-    public const FORMS  = 'forms';
-    public const FIELDS = 'fields';
-
     /**
      * @inheritDoc
      */
@@ -28,12 +25,7 @@ final class ConfigProvider implements ConfigProviderInterface
                     FormsPluginManager::class  => Factory\PluginManager::class,
                 ],
             ],
-            self::class        => [
-                self::DEPENDENCIES_ABSTRACT_FACTORIES => [
-                    Factory\AbstractForms::class,
-                    Factory\AbstractField::class,
-                ],
-            ],
+            self::class        => [],
         ];
     }
 }
